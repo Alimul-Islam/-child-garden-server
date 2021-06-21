@@ -32,7 +32,6 @@ client.connect(err => {
             console.log(err, results)
             res.send({ count: results })
 
-
         })
     })
     app.post('/addTeacher', (req, res) => {
@@ -40,7 +39,6 @@ client.connect(err => {
         teacherCollection.insertOne(teacher, (err, results) => {
             console.log(err, results)
             res.send({ count: results })
-
 
         })
     })
@@ -53,9 +51,7 @@ client.connect(err => {
             }
         })
 
-
     })
-
 
 });
 
